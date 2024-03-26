@@ -1,5 +1,8 @@
 # ITU E.164 Country Codes
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/tjdavey/itu-e164-country-codes/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/tjdavey/itu-e164-country-codes/tree/main)
+[![Coverage Status](https://coveralls.io/repos/github/tjdavey/itu-e164-country-codes/badge.svg?branch=main)](https://coveralls.io/github/tjdavey/itu-e164-country-codes?branch=main)
+[![Known Vulnerabilities](https://snyk.io/test/github/tjdavey/itu-e164-country-codes/badge.svg)](https://snyk.io/test/github/tjdavey/itu-e164-country-codes)
+
 
 
 
