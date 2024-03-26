@@ -2,14 +2,33 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.2
+  coveralls: coveralls/coveralls@2.2.1
+
+jobs:
+  coverage:
+    executor:
+      name: node/default
+      tag: '18'
+    steps:
+      - checkout
+      - node/install-packages:
+          check-cache: always
+          pkg-manager: yarn-berry
+          with-cache: false
+      - run:
+          command: npm run test:coverage
+          name: Run Coverage
+      - coveralls/upload:
+          coverage_file: ./coverage/lcov.info
 
 workflows:
-  test: 
+  test:
     jobs:
       - node/test:
-          version: '16.10'
+          version: '18'
           pkg-manager: npm
       - node/run:
           npm-run: lint
           version: '16.10'
           pkg-manager: npm
+      - coverage

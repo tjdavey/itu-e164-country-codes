@@ -1,4 +1,7 @@
 # ITU E.164 Country Codes
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/tjdavey/itu-e164-country-codes/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/tjdavey/itu-e164-country-codes/tree/main)
+
+
 
 Javascript Module for searching ITU E.164 Country Codes.
 
