@@ -1,4 +1,7 @@
-# ITU E.164 Country Codes
+# ITU-T E.164 Country Code Lookup
+
+[![npm version](https://badge.fury.io/js/itu-e164-country-codes.svg)](https://badge.fury.io/js/itu-e164-country-codes)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/tjdavey/itu-e164-country-codes/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/tjdavey/itu-e164-country-codes/tree/main)
 [![Coverage Status](https://coveralls.io/repos/github/tjdavey/itu-e164-country-codes/badge.svg?branch=main)](https://coveralls.io/github/tjdavey/itu-e164-country-codes?branch=main)
 [![Known Vulnerabilities](https://snyk.io/test/github/tjdavey/itu-e164-country-codes/badge.svg)](https://snyk.io/test/github/tjdavey/itu-e164-country-codes)

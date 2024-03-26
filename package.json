@@ -1,7 +1,7 @@
 {
   "name": "itu-e164-country-codes",
   "version": "1.0.1",
-  "description": "Javascript Module for searching ITU E.164 Country Codes",
+  "description": "Javascript Module for searching ITU-T E.164 Country Codes",
   "exports": {
     ".": {
       "types": "./lib/index.d.ts",
@@ -37,5 +37,18 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
     "jest": "^29.7.0"
-  }
+  },
+  "keywords": [
+    "ITU-T",
+    "ITU",
+    "E.164",
+    "164",
+    "telephone",
+    "telephony",
+    "phone",
+    "number",
+    "dialing",
+    "country",
+    "code"
+  ]
 }
