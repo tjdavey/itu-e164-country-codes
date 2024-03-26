@@ -1,6 +1,6 @@
 {
   "name": "itu-e164-country-codes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript Module for searching ITU E.164 Country Codes",
   "exports": {
     ".": {
