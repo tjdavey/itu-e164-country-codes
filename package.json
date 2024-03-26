@@ -2,9 +2,19 @@
   "name": "itu-e164-country-codes",
   "version": "1.0.0",
   "description": "Javascript Module for searching ITU E.164 Country Codes",
-  "exports": "./index.js",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "jest",
+    "test": "npm run test:jest && npm run test:types",
+    "test:jest": "jest",
+    "test:types": "check-dts",
     "coverage": "jest --coverage",
     "lint": "eslint \"**/*.js\""
   },
@@ -19,6 +29,7 @@
   },
   "homepage": "https://github.com/tjdavey/itu-e164-country-codes#readme",
   "devDependencies": {
+    "check-dts": "^0.7.2",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",

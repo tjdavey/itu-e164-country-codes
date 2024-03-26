@@ -1,4 +1,4 @@
-const ituE164CC = require('./index')
+const ituE164CC = require('../lib/index')
 describe('fromITUCode', () => {
   test('should return a valid value from an int', () => {
     const results = ituE164CC.fromITUCode('61')
