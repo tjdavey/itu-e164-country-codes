@@ -1,0 +1,15 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.2
+
+workflows:
+  test: 
+    jobs:
+      - node/test:
+          version: '16.10'
+          pkg-manager: npm
+      - node/run:
+          npm-run: lint
+          version: '16.10'
+          pkg-manager: npm
