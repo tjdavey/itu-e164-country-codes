@@ -16,7 +16,7 @@ jobs:
           pkg-manager: yarn-berry
           with-cache: false
       - run:
-          command: npm run test:coverage
+          command: npm run coverage
           name: Run Coverage
       - coveralls/upload:
           coverage_file: ./coverage/lcov.info
