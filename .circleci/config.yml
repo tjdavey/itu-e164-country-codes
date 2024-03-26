@@ -8,7 +8,7 @@ jobs:
   coverage:
     executor:
       name: node/default
-      tag: '18'
+      tag: 'lts'
     steps:
       - checkout
       - node/install-packages:
@@ -25,10 +25,10 @@ workflows:
   test:
     jobs:
       - node/test:
-          version: '18'
+          version: 'lts'
           pkg-manager: npm
       - node/run:
           npm-run: lint
-          version: '16.10'
+          version: 'lts'
           pkg-manager: npm
       - coverage
