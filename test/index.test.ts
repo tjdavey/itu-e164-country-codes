@@ -1,7 +1,8 @@
-const ituE164CC = require('../lib/index')
+import * as ituE164CC from '../src/index'
+
 describe('fromITUCode', () => {
   test('should return a valid value from an int', () => {
-    const results = ituE164CC.fromITUCode('61')
+    const results = ituE164CC.fromITUCode(61)
     expect(Array.isArray(results)).toBe(true)
     expect(results.length).toBe(1)
     expect(results).toContainEqual({
@@ -56,7 +57,7 @@ describe('fromISOCode', () => {
   })
 
   test('should return a valid value from a valid lowercase code', () => {
-    const results = ituE164CC.fromISOCode('DE')
+    const results = ituE164CC.fromISOCode('de')
     expect(Array.isArray(results)).toBe(true)
     expect(results.length).toBe(1)
     expect(results).toContainEqual({
@@ -80,7 +81,7 @@ describe('fromISOCode', () => {
   })
 
   test('should return an empty array for completely invalid codes', () => {
-    const results = ituE164CC.fromISOCode(1)
+    const results = ituE164CC.fromISOCode(1 as unknown as string)
 
     expect(Array.isArray(results)).toBe(true)
     expect(results.length).toBe(0)

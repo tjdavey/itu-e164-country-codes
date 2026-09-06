@@ -1,13 +1,13 @@
-import {fromITUCode, fromISOCode} from "../lib";
+import { fromITUCode, fromISOCode } from '../dist'
 
-fromITUCode(61);
+fromITUCode(61)
 
-fromITUCode('61');
+fromITUCode('61')
 
-fromITUCode(997);
+fromITUCode(997)
 
-fromITUCode('bad');
+fromITUCode('bad')
 
-fromISOCode('AU');
+fromISOCode('AU')
 
-fromISOCode('ZZ');
+fromISOCode('ZZ')

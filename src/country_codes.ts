@@ -1,4 +1,6 @@
-const CountryCodes = [{
+import type { ITUEntry } from './types'
+
+const CountryCodes: ITUEntry[] = [{
   itu_country_code: 0,
   name: 'Reserved',
   iso_country_code: null
@@ -1336,4 +1338,4 @@ const CountryCodes = [{
   iso_country_code: null
 }]
 
-module.exports = CountryCodes
+export default CountryCodes

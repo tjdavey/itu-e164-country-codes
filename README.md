@@ -21,11 +21,22 @@ npm install itu-e164-country-codes
 
 ## Usage
 
+### EcmaScript Module (ESM)
+
+```
+import { fromITUCode, fromISOCode } from 'itu-e164-country-codes';
+```
+
+### CommonJS Module
+```
+const { fromITUCode, fromISOCode } = require('itu-e164-country-codes');
+```
+
+## API
+
 ### `fromITUCode`
 
 Search for records by ITU E.164 assigned country code.
-
-```javascript 
 
 ```javascript
 const { fromITUCode } = require('itu-e164-country-codes');
@@ -51,6 +62,8 @@ console.log(fromITUCode(372));
 Search for records by ISO 3166-1 alpha-2 Country Code.
 
 ```javascript
+const { fromISOCode } = require('itu-e164-country-codes');
+
 // Search by ISO 3166-1 alpha-2 Country Code
 console.log(fromISOCode('AU'));
 /*
@@ -75,6 +88,12 @@ console.log(fromISOCode('AU'));
 
 ## Data Structure
 
+The `ITUEntry` type is exported for TypeScript consumers:
+
+```typescript
+import type { ITUEntry } from 'itu-e164-country-codes';
+```
+
 ```javascript
 [
   {
@@ -88,8 +107,8 @@ console.log(fromISOCode('AU'));
 | Field              | Type                  | Description                                                                         | Notes                                                                                                                                                                                                                                       |
 |--------------------|-----------------------|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `itu_country_code` | `number`              | [ITU-T E.164 assigned country code](https://en.wikipedia.org/wiki/E.164)            |                                                                                                                                                                                                                                             |
-| `iso_country_code` | `string &#124; null`  | [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) | Where the ITU code represents a sub-region of a country which does not have a seperate ISO 3166-1 designation the country designation is used. If the ITU code does not correspond to a country or region of a country this will be `null`. |
-| `name`             | `string  &#124; null` | Name                                                                                | Defined as per the ITU document "List of Recommendation ITU-T E.164 assigned country codes". If the ITU-T documentation lists this ITU-T e.164 assigned country code as "Spare" this will be `null`.                                        |
+| `iso_country_code` | `string \| null`  | [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) | Where the ITU code represents a sub-region of a country which does not have a seperate ISO 3166-1 designation the country designation is used. If the ITU code does not correspond to a country or region of a country this will be `null`. |
+| `name`             | `string  \| null` | Name                                                                                | Defined as per the ITU document "List of Recommendation ITU-T E.164 assigned country codes". If the ITU-T documentation lists this ITU-T e.164 assigned country code as "Spare" this will be `null`.                                        |
 
 
 
