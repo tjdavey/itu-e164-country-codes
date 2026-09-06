@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Coverage Status](https://coveralls.io/repos/github/tjdavey/itu-e164-country-codes/badge.svg?branch=main)](https://coveralls.io/github/tjdavey/itu-e164-country-codes?branch=main)
 [![Known Vulnerabilities](https://snyk.io/test/github/tjdavey/itu-e164-country-codes/badge.svg)](https://snyk.io/test/github/tjdavey/itu-e164-country-codes)
-
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftjdavey%2Fitu-e164-country-codes.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftjdavey%2Fitu-e164-country-codes?ref=badge_shield&issueType=license)
 
 
 
